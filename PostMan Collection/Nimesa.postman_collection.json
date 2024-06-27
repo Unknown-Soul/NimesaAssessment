@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "5225bbce-9dd4-4547-85f8-6b8a17837e16",
+		"name": "Nimesa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27915964"
+	},
+	"item": [
+		{
+			"name": "DiscoverServices",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    \"EC2\",\n    \"S3\"\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/discoverServices",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"discoverServices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetJobResult",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/getJobResult/6148f832-b57a-4682-8e71-c68c3c5c719f",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getJobResult",
+						"6148f832-b57a-4682-8e71-c68c3c5c719f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getDiscoveryResult",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/getDiscoveryResult/S3",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getDiscoveryResult",
+						"S3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getS3BucketObjects",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "nimesaassignmentbucket1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/getS3BucketObjects",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getS3BucketObjects"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getS3BucketObjectCount",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/getS3BucketObjectCount/nimesaassignmentbucket1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getS3BucketObjectCount",
+						"nimesaassignmentbucket1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getS3BucketObjectLike",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/discovery/getS3BucketObjectLike?bucketName=nimesaassignmentbucket1&pattern=Test-File",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"discovery",
+						"getS3BucketObjectLike"
+					],
+					"query": [
+						{
+							"key": "bucketName",
+							"value": "nimesaassignmentbucket1"
+						},
+						{
+							"key": "pattern",
+							"value": "Test-File"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
